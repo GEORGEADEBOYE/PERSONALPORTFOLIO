@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Smokum&display=swap');
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	margin: 0;
+	padding: 0;
+	color: white;
+	background-image: url("images/wall-port.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+header{
+	background-color: #333;
+	color:#fff;
+	padding: 30px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 22px;
+	position: fixed;
+	width: 100%;
+	height: 30px;
+	font-family: 'Smokum', cursive;
+}
+
+header > h1{
+	margin-right: 5em;
+	text-shadow: 3px 3px 10px red;
+}
+header > h1:hover{
+	color: red;
+	text-shadow: 4px 4px 10px white;
+}
+
+header > h2{
+	margin-right: 2em;
+}
+header > h2:hover{
+	color: red;
+	text-shadow: 4px 4px 10px white;
+}
+
+header > ul > a{
+	color: white;
+	text-decoration: none;
+	margin: 8px;
+}
+
+header > ul > a:hover{
+    border-bottom: 2px solid red;
+}
+
+hero > .hero-section > .hero-img{
+	background-image: url(images/portfolio-7.jpg);
+	background-size: cover;
+	justify-content: center;
+	display: inline-grid;
+	align-items: center;
+	background-position: center center;
+	width: 100%;
+	height: 400px;
+	overflow-x: hidden;
+}
+
+hero > .hero-section > .hero-img::before{
+	content: "";
+	background: rgba(150, 250, 150, 0.4);
+	z-index: 2;
+	position: absolute;
+	top: 5.6em;
+	bottom: 8.4em;
+	left: 0;
+	right: 0;
+}
+
+hero > .hero-section > .hero-img > .hero-text > p{
+	font-size: 3em;
+}
+
+hero > .hero-section > .hero-img > .hero-text > .hero-link > a{
+	font-size: 2em;
+	background: white;
+	color: red;
+	border: 0.5em solid white;
+	border-radius: 25px;
+	text-decoration: none;
+	text-align: center;
+	margin: auto 8em;
+}
+
+section{
+	padding: 20px;
+}
+
+main > .services > h3{
+    margin-left: 2em;
+}
+
+main > .services > .posts{
+	display: flex;
+	background-color: black;
+	margin: 2em;
+	padding: 2em 2em;
+	align-items: center;
+	justify-content: center;
+	border-radius: 25px;
+}
+
+main > .services > .posts > .post2, main > .services > .posts > .post1, main > .services > .posts > .post3{
+	margin: 2em;
+	box-shadow: 5px 5px 10px grey;
+	height: 390px;
+	align-items: center;
+	text-align: center;
+	padding: 1em 2em;
+}
+
+main > .services > .post1 > img, main > .services > .post2 > img, main > .services > .post3 > img{
+   width: 100px;
+   height: 75px;
+   margin: 1em;
+}
+
+main > .services > .post1 > ul, main > .services > .post2 > ul, main > .services > .post3 > ul{
+   list-style-type: none;
+}
+
+#gallery{
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 2em;
+}
+.myabout{
+	border:15px solid black;
+	border-radius: 25%;
+	text-align: center;
+	background-color: brown;
+	padding: 15px;
+	margin: 50px;
+}
+
+img{
+	width:30%;
+	box-shadow: 5px 5px 10px black;
+	border-radius: 25px;
+	margin: auto 1em;
+}
+
+blockquote{
+	font-style: italic;
+	margin: 20px 0;
+	margin: auto 2em;
+}
+
+cite{
+	font-weight: bold;
+}
+
+.contact > a{
+	text-decoration: none;
+	color: white;
+}
+
+footer{
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+/*media query for screen max 769*/
+
+@media screen and (max-width: 769px) {
+  *{
+	padding: 0px;
+	margin: 0px;
+   }
+ body{
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	background-repeat: no-repeat;
+	background-size: cover;
+   }
+   header{
+	padding: 20px;
+	font-size: 16px;
+	width: 769px;
+	height: 50px;
+	font-family: 'Smokum', cursive;
+   }
+   header > ul > a{
+	margin: 5px;
+   }
+   hero > .hero-section > .hero-img{
+	width: 769px;
+	height: 350px;
+	overflow-x: hidden;
+   }
+   hero > .hero-section > .hero-img::before{
+	top: 5.6em;
+	bottom: 9.6em;
+	left: 0;
+	right: 0;
+   }
+   hero > .hero-section > .hero-img > .hero-text > p{
+	font-size: 1.5em;
+   }
+   main > .services > .posts > .post1, main > .services > .posts > .post2, main > .services > .posts > .post3{
+   	font-size: 12px;
+   }
+   .work > #work-sample > img{
+   	width: 200px;
+   }
+
+}
+
+/*media query for screen max 769*/
+
+@media screen and (max-width: 489px) {
+  *{
+	padding: 0px;
+	margin: 0px;
+   }
+ body{
+	margin: 0;
+	padding: 0;
+	font-size: 10px;
+	background-repeat: no-repeat;
+	background-size: cover;
+   }
+   header{
+	padding: 20px;
+	font-size: 14px;
+	width: 489px;
+	height: 50px;
+	font-family: 'Smokum', cursive;
+   }
+   header h1, header h2{
+   	font-size: 16px;
+   }
+   header > ul > a{
+	margin: 5px;
+   }
+   hero > .hero-section > .hero-img{
+	width: 489px;
+	height: 250px;
+	overflow-x: hidden;
+   }
+   hero > .hero-section > .hero-img::before{
+	top: 9.0em;
+	bottom: 22.6em;
+	left: 0;
+	right: 0;
+   }
+   hero > .hero-section > .hero-img > .hero-text > p{
+	font-size: 1.5em;
+	margin-bottom: 2em;
+   }
+   hero > .hero-section > .hero-img > .hero-text > .her-text > a{
+   	font-size: 2em;
+   }
+   main > .services > .posts > .post1, main > .services > .posts > .post2, main > .services > .posts > .post3{
+   	font-size: 8px;
+   	height: 240px;
+   }
+   .work > #work-sample > img{
+   	width: 130px;
+   	margin-right: 0.5em;
+   }
+
+}
